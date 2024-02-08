@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memb</title>
+    <title>Members</title>
 </head>
 <body>
     {% for x in mymembers %}
-        <li>{{x.firstname}} {{x.lastname}}</li>
+        <li><a href="details/{{x.id}}">{{x.firstname}} {{x.lastname}}</a></li>
     {% endfor %}
 </body>
 </html>
